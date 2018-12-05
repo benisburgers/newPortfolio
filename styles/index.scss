@@ -14,9 +14,15 @@ body {
   text-decoration: none;
 }
 
-.about-text-container {
-  text-align: center;
-  p {
-    text-align: left;
+.about {
+  .about-text-container {
+    text-align: center;
+    p {
+      text-align: left;
+    }
+  }
+  .portrait {
+    border-radius: 50%;
+    width: 50%;
   }
 }
