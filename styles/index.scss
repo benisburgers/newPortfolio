@@ -16,15 +16,18 @@ body {
   font-family: "Helvetica","Arial",sans-serif;
 }
 
-.about {
-  .about-text-container {
-    text-align: center;
-    p {
-      text-align: left;
+.welcome {
+  width: 100%;
+  background-color: green;
+  .portrait-container {
+    width: 100%;
+    background-color: blue;
+    .portrait {
+      max-width: 100%;
+      display: block;
     }
   }
-  .portrait {
-    border-radius: 50%;
-    width: 50%;
+  .name {
+    background-color: red;
   }
 }
