@@ -1,12 +1,12 @@
 @import "variables";
 @import "navbar";
+@import "welcome";
 $body-color: blue;
 
 body {
   color: $body-color;
   margin: 0;
   padding: 0;
-  width: 100vw;
 }
 
 * {
@@ -14,20 +14,4 @@ body {
   padding: 0;
   text-decoration: none;
   font-family: "Helvetica","Arial",sans-serif;
-}
-
-.welcome {
-  width: 100%;
-  background-color: green;
-  .portrait-container {
-    width: 100%;
-    background-color: blue;
-    .portrait {
-      max-width: 100%;
-      display: block;
-    }
-  }
-  .name {
-    background-color: red;
-  }
 }

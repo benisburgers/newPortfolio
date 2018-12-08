@@ -1,0 +1,24 @@
+.welcome {
+  width: 100%;
+  background-color: green;
+  .portrait-container {
+    width: 100%;
+    background-color: blue;
+    .portrait {
+      max-width: 100%;
+      display: block;
+    }
+  }
+  .welcome-text-container {
+    .name {
+      background-color: red;
+    }
+    .description {
+      background-color: orange;
+      span {
+        white-space: pre-line;
+        display: inline-block;
+      }
+    }
+  }
+}
