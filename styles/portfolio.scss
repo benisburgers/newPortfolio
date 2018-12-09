@@ -1,0 +1,46 @@
+.portfolio {
+  .portfolio-item {
+    .portfolio-image {
+      width: 100%;
+    }
+    .portfolio-iframe-container {
+      display: none;
+      top: 5vh;
+      width: 100%;
+      height: 95vh;
+      background-color: green;
+      z-index: 10;
+      position: fixed;
+      .portfolio-iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+  }
+}
+
+.iframe-closer {
+  display: none;
+  position: absolute;
+  top: 0;
+  height: 5vh;
+  background-color: blue;
+  width: 100%;
+  z-index: 15;
+  position: fixed;
+  span {
+    font-size: 4vh;
+    color: red;
+  }
+}
+
+.iframe-shower {
+  display: none;
+  &:checked ~ .portfolio-iframe-container {
+    display: block;
+  }
+  &:checked ~ .iframe-closer {
+    display: block;
+  }
+}
