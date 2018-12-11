@@ -1,46 +1,31 @@
 .portfolio {
   .portfolio-item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     .portfolio-image {
       width: 100%;
     }
-    .portfolio-iframe-container {
+    .portfolio-modal {
       display: none;
-      top: 5vh;
+      top: 0;
       width: 100%;
-      height: 95vh;
+      height: 100vh;
       background-color: green;
       z-index: 10;
       position: fixed;
-      .portfolio-iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
+      .close-button {
+        background-color: green;
+        border: 1px solid black;
+        border-radius: 10%;
       }
     }
   }
 }
 
-.iframe-closer {
+.modal-shower {
   display: none;
-  position: absolute;
-  top: 0;
-  height: 5vh;
-  background-color: blue;
-  width: 100%;
-  z-index: 15;
-  position: fixed;
-  span {
-    font-size: 4vh;
-    color: red;
-  }
-}
-
-.iframe-shower {
-  display: none;
-  &:checked ~ .portfolio-iframe-container {
-    display: block;
-  }
-  &:checked ~ .iframe-closer {
+  &:checked ~ .portfolio-modal {
     display: block;
   }
 }
