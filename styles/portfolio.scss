@@ -1,4 +1,3 @@
-$portfolio-modal-burger-size: 1.5rem;
 .portfolio {
   .portfolio-item {
     .portfolio-image {
@@ -12,6 +11,7 @@ $portfolio-modal-burger-size: 1.5rem;
     .portfolio-modal {
       display: none;
       top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       z-index: 10;

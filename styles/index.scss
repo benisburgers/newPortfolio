@@ -3,10 +3,9 @@
 @import "welcome";
 @import "about";
 @import "portfolio";
-$body-color: blue;
+@import "contact";
 
 body {
-  color: $body-color;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -22,4 +21,26 @@ body {
 
 img {
   display: block;
+}
+
+.section {
+  box-sizing: border-box;
+  padding: 1rem;
+  &.odd {
+    background-color: $background-color-section-odd;
+  }
+  &.even {
+    background-color: $background-color-section-even;
+  }
+}
+
+hr {
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+  border: 0;
+  border-top: 1px solid black;
+}
+
+section {
+  
 }

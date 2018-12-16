@@ -2,7 +2,6 @@
   position: relative;
   margin-top: 3em;
   width: 100%;
-  background-color: green;
   .portrait-container {
     width: 100%;
     background-color: blue;
@@ -12,11 +11,7 @@
     }
   }
   .welcome-text-container {
-    .name {
-      background-color: red;
-    }
     .description {
-      background-color: orange;
       span {
         white-space: pre-line;
         display: inline-block;
