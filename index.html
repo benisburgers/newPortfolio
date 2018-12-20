@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <title>Beni's portfolio</title>
 </head>
 <body>
@@ -35,11 +36,11 @@
     <div class="portrait-container">
       <img class="portrait" src="/images/portrait.jpeg">
     </div>
-    <div class="welcome-text-container section odd">
+    <div class="welcome-text-container section">
       <h1 class="name">
         Beni Bar-Gera
       </h1>
-      <h2 class="description">
+      <h2 class="description bottom">
         <span>Web Developer & </span>
         <span>Outdoor Enthusiast</span>
       </h2>
@@ -47,7 +48,7 @@
   </div>
 
   <div id="about-anchor"></div>
-  <div class="about section even">
+  <div class="about section even center">
     <div class="about-header-container">
       <h2>About</h2>
     </div>
@@ -55,16 +56,16 @@
       <p>
         Beni is a University of British Columbia graduate, outdoor enthusiast, and aspiring web developer. Since graduating, he has worked as a rafting guide, ski instructor, and hiking guide in the Swiss Alps and the Canadian Rocky Mountains. When he's not spending time outside, Beni has been learning the essentials of web development.
       </p>
-      <p>
+      <p class="bottom">
         Over the last year, Beni has written countless lines of code, learning how to use HTML, CSS, Javascript, Bootstrap, Python, and Git. Currently, Beni is learning how to use Ruby. Next, Beni plans to learn about frameworks such as Ruby on Rails and PHP, and hopes to complete an internship as a web developer.
       </p>
     </div>
   </div>
 
   <div id="portfolio-anchor"></div>
-  <div class="portfolio section odd">
+  <div class="portfolio section odd center">
     <h2>Portfolio</h2>
-    <h3>Click on them to find out more</h3>
+    <p>Click on them to find out more</p>
     <div class="portfolio-item jomi">
       <input type="checkbox" id="modal-shower-jomi" class="modal-shower">
       <label for="modal-shower-jomi">
@@ -83,7 +84,7 @@
             </div>
           </label>
         </div>
-        <img src="/images/portfolio/jomi.png" class="portfolio-image">
+        <img src="/images/portfolio/jomi.png" class="portfolio-modal-image">
         <a href="https://yx2xy.com/jomi/index.html" target="_blank">
           <button>Check it out</button>
         </a>
@@ -112,7 +113,7 @@
             </div>
           </label>
         </div>
-        <img src="/images/portfolio/terminal.png" class="portfolio-image">
+        <img src="/images/portfolio/terminal.png" class="portfolio-modal-image">
         <a href="https://repl.it/repls/HighlevelCylindricalConnection" target="_blank">
           <button>Check it out</button>
         </a>
@@ -141,7 +142,7 @@
             </div>
           </label>
         </div>
-        <img src="/images/portfolio/calculator.png" class="portfolio-image">
+        <img src="/images/portfolio/calculator.png" class="portfolio-modal-image">
         <a href="https://benisburgers.github.io/calculator/" target="_blank">
           <button>Check it out</button>
         </a>
@@ -170,7 +171,7 @@
             </div>
           </label>
         </div>
-        <img src="/images/portfolio/etch-a-sketch.png" class="portfolio-image">
+        <img src="/images/portfolio/etch-a-sketch.png" class="portfolio-modal-image">
         <a href="https://benisburgers.github.io/etch-a-sketch/" target="_blank">
           <button>Check it out</button>
         </a>
@@ -181,10 +182,29 @@
     </div>
   </div>
 
-  <div class="contact section even">
-    <h2>Contact me</h2>
-    <div class="email-address"><a href="mailto:contact@benibargera.com" target="_top">contact@benibargera.com</a></div>
+  <div id="contact-anchor"></div>
+  <div class="contact section even center">
+    <h2>Contact</h2>
+    <div class="email-address">
+      <a href="mailto:contact@benibargera.com" target="_top">contact@benibargera.com</a>
+    </div>
   </div>
+
+  <div class="social-media section center">
+    <h2>Find me on:</h2>
+    <div class="profile-buttons-container">
+      <a href="https://github.com/benisburgers"  target="_blank" class="github"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/benjamin-bar-gera" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://stackoverflow.com/users/9697317/benisburgers" target="_blank" class="stack-overflow"><i class="fab fa-stack-overflow"></i></a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span class="copyright">Copyright © Beni Bar-Gera</span>
+    <div class="back-to-top">
+      <i class="fa fa-chevron-up"></i>      
+    </div>
+  </footer>
 
 </body>
 </html>

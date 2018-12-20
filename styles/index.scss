@@ -4,6 +4,8 @@
 @import "about";
 @import "portfolio";
 @import "contact";
+@import "social-media";
+@import "footer";
 
 body {
   margin: 0;
@@ -16,6 +18,7 @@ body {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: black;
   font-family: "Helvetica","Arial",sans-serif;
 }
 
@@ -41,6 +44,25 @@ hr {
   border-top: 1px solid black;
 }
 
-section {
-  
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  padding-bottom: .5rem;
+  font-size: 1.75rem;
+}
+
+p {
+  padding-bottom: .5rem;
+  font-size: 1.25rem;
+}
+
+
+.bottom {
+  padding-bottom: 0 !important;
+}
+
+.center {
+  text-align: center;
 }

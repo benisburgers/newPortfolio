@@ -21,6 +21,10 @@
       box-sizing: border-box;
       padding: 1rem;
       background-color: white;
+      .portfolio-modal-image {
+        width: 100%;
+        border: 1px solid black;
+      }
       .portfolio-modal-header {
         display: flex;
         flex-direction: row;
@@ -59,10 +63,26 @@
       }
       p {
         text-align: justify;
+        font-size: 1rem;
       }
       button {
         display: block;
         margin: auto;
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        border-radius: .3rem;
+        border: none;
+        background-color: $portfolio-button-background-color;
+        transition: all .15s;
+        border: 1px solid $portfolio-button-background-color;
+        &:hover {
+          background-color: $portfolio-button-background-color;
+          filter: brightness(85%);
+          cursor: pointer;
+        }
+        &:active {
+          border: 1px solid black;
+        }
       }
       .portfolio-iframe {
         display: block;
