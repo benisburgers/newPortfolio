@@ -1,8 +1,9 @@
 .welcome {
+  background-color: $primary-color;
   position: relative;
   margin-top: 3em;
   width: 100%;
-  .portrait-container {
+  .image-container {
     width: 100%;
     background-color: blue;
     .portrait {
@@ -10,12 +11,16 @@
       display: block;
     }
   }
-  .welcome-text-container {
+  .text-container {
     .description {
       span {
         white-space: pre-line;
         display: inline-block;
+        color: $primary-text-color;
       }
+    }
+    h1 {
+      color: $primary-text-color;
     }
   }
 }

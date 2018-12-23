@@ -9,8 +9,7 @@
   align-items: center;
   flex-wrap: wrap;
   height: $navbar-height;
-  background-color: orange;
-  border-top: 0.0625em solid black;
+  background-color: $primary-color-dark;
   .menu-button-container {
     @media (min-width: $navbar-break-point) {
       width: 50%;
@@ -26,10 +25,16 @@
       flex-direction: column;
       justify-content: space-around;
       span {
-        background-color: green;
+        background-color: white;
         width: 100%;
         height: 0.125em;
         transition: transform .3s, opacity .3s;
+      }
+      &:hover {
+        cursor: pointer;
+        span {
+          background-color: $accent-color;
+        }
       }
     }
     .hamburger {
@@ -43,7 +48,6 @@
     .burger-shower {
       display: none;
       &:checked ~ .hamburger{
-        background-color: blue;
         .burger-symbol {
           justify-content: center;
           .burger-span-top {
@@ -78,11 +82,11 @@
         justify-content: space-between;
         align-items: center;
         padding: none;
-        background-color: orange;
+        background-color: inherit;
       }
        height: auto;
        width: auto;
-       background-color: red;
+       background-color: $accent-color;
        position: absolute;
        top: $navbar-height;
        left: -150vw;
@@ -95,9 +99,9 @@
          font-size: 2em;
          padding: .5em 0;
          a {
-           color: black;
+           color: $primary-text-color;
            &:hover {
-             color: purple;
+             color: $secondary-text-color;
            }
          }
        }
@@ -108,5 +112,11 @@
     position: relative;
     display: inline-block;
     padding-right: $navbar-padding-right;
+    a {
+      color: white;
+      &:hover {
+        color: $accent-color;
+      }
+    }
   }
 }
