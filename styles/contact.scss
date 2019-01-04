@@ -1,6 +1,6 @@
 .contact {
   .email-address {
-    font-size: 1.5rem;
+    text-align: center;
   }
   .social-media {
     .profile-buttons-container {
@@ -8,22 +8,6 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
-      padding: .5rem;
-      a {
-        i {
-          padding: 1rem;
-          border: 1px solid black;
-          border-radius: 50%;
-          transition: all .15s;
-          &:hover {
-            background-color: black;
-            color: white;
-          }
-          &:focus {
-            transform: scale(1.1);
-          }
-        }
-      }
     }
   }
 }

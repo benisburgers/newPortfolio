@@ -1,0 +1,13 @@
+@import "about";
+@import "portfolio";
+@import "contact";
+
+.main-body {
+  padding: 0 $navbar-padding;
+  > section {
+    h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+    }
+    padding: 1rem 0;
+  }
+}

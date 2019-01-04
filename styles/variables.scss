@@ -1,6 +1,5 @@
-$navbar-height: 3em;
-$navbar-padding-left: 1em;
-$navbar-padding-right: 1em;
+$navbar-padding: 1em;
+$burger-symbol-height: 1em;
 $navbar-break-point: 500px;
 $portfolio-modal-burger-size: 1.5rem;
 $background-color-section-even: green;
@@ -21,3 +20,8 @@ $divider-color:        #BDBDBD;
 
 $background-bright:    #f5f5f5;
 $background-dark:      #e0e0e0;
+
+$small-device:         576px;
+$medium-device:        768px;
+$large-device:         992px;
+$extra-large-device:   1200px;

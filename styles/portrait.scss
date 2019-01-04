@@ -1,0 +1,14 @@
+.portrait {
+  .text-container {
+    padding: $navbar-padding;
+    background-color: $primary-color;
+    span {
+      white-space: pre-line;
+      display: inline-block;
+    }
+  }
+  .my-face {
+    margin-top: 3em;
+    max-width: 100%;
+  }
+}

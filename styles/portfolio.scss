@@ -27,7 +27,7 @@
       flex-direction: column;
       justify-content: space-between;
       box-sizing: border-box;
-      padding: 1rem;
+      padding: $navbar-padding;
       background-color: white;
       .portfolio-modal-image {
         width: 100%;
@@ -37,9 +37,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        h3 {
-          font-size: $portfolio-modal-burger-size;
-        }
         .close-button {
           &:hover {
             cursor: pointer;

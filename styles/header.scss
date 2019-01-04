@@ -1,4 +1,6 @@
 .navbar {
+  padding: $navbar-padding;
+  box-sizing: border-box;
   top: 0;
   z-index: 5;
   position: fixed;
@@ -8,20 +10,15 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  height: $navbar-height;
+  height: auto;
   background-color: $primary-color-dark;
   .menu-button-container {
-    @media (min-width: $navbar-break-point) {
-      width: 50%;
-    }
-    padding-left: $navbar-padding-left;
     display: inline-flex;
     flex-direction: column;
     .burger-symbol {
-      width: 1em;
-      height: 1em;
+      width: $burger-symbol-height;
+      height: $burger-symbol-height;
       display: inline-flex;
-      vertical-align: top;
       flex-direction: column;
       justify-content: space-around;
       span {
@@ -32,16 +29,11 @@
       }
       &:hover {
         cursor: pointer;
-        span {
-          background-color: $accent-color;
-        }
       }
     }
     .hamburger {
-      padding: 0.5em;
-      position: relative;
       display: inline-flex;
-      @media (min-width: $navbar-break-point) {
+      @media (min-width: $small-device) {
         display: none;
       }
     }
@@ -64,59 +56,47 @@
       &:checked ~ .burger-menu {
         display: block;
         left: 0;
-        @media (min-width: $navbar-break-point) {
-          display: flex;
-        }
       }
     }
     .burger-menu {
-      @media (min-width: $navbar-break-point) {
-        width: 100%;
+      @media (min-width: $small-device) {
         position: relative;
         display: inline-flex;
-        height: 3em;
-        font-size: 1em;
         left: 0;
         top: 0;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: none;
         background-color: inherit;
       }
-       height: auto;
-       width: auto;
        background-color: $accent-color;
        position: absolute;
-       top: $navbar-height;
+       top: $burger-symbol-height*3;
        left: -150vw;
-       padding: 0 $navbar-padding-left;
        li {
-         @media (min-width: $navbar-break-point) {
-           font-size: 1em;
+         @media (min-width: $small-device) {
+           padding: 0 $navbar-padding;
+           font-size: 1.25rem;
+           color: white;
          }
          list-style: none;
-         font-size: 2em;
-         padding: .5em 0;
+         padding: $burger-symbol-height/2 $navbar-padding;
          a {
            color: $primary-text-color;
            &:hover {
              color: $secondary-text-color;
            }
          }
-       }
+      }
     }
   }
   .home-button-container {
-    display: inline-block;
-    position: relative;
-    display: inline-block;
-    padding-right: $navbar-padding-right;
+    @media (min-width: $small-device) {
+      font-size: 1.25rem;
+    }
+    line-height: 100%;
+    font-size: $burger-symbol-height;
     a {
       color: white;
-      &:hover {
-        color: $accent-color;
-      }
+      display: inline;
+      border: none;
     }
   }
 }
