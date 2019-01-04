@@ -1,7 +1,18 @@
 .about {
-  .text-container {
-    p {
-      text-align: justify;
+  p {
+    text-align: justify;
+  }
+}
+
+@media (min-width: $small-device) {
+  .about {
+    .grid-wrapper {
+      .paragraph-one {
+        grid-column: col-start 1 / span 6;
+      }
+      .paragraph-two {
+        grid-column: col-start 7 / span 6;
+      }
     }
   }
 }

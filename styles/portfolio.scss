@@ -99,3 +99,26 @@
     display: flex;
   }
 }
+
+@media (min-width: $small-device) {
+  .portfolio-items {
+    hr {
+      display: none;
+    }
+    .grid-wrapper {
+      grid-row-gap: 1rem;
+      .jomi {
+        grid-column: col-start 1 / span 6;
+      }
+      .orange {
+        grid-column: col-start 7 / span 6;
+      }
+      .calculator {
+        grid-column: col-start 1 / span 6;
+      }
+      .etch-a-sketch {
+        grid-column: col-start 7 / span 6;
+      }
+    }
+  }
+}
